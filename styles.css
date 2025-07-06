@@ -1,28 +1,28 @@
 /* === Lato Font Faces (TTF-based) === */
 @font-face {
-  font-family: 'Lato';
-  src: url('fonts/Lato-Thin.ttf') format('truetype');
+  font-family: "Lato";
+  src: url("fonts/Lato-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('fonts/Lato-Light.ttf') format('truetype');
+  font-family: "Lato";
+  src: url("fonts/Lato-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('fonts/Lato-Regular.ttf') format('truetype');
+  font-family: "Lato";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('fonts/Lato-Bold.ttf') format('truetype');
+  font-family: "Lato";
+  src: url("fonts/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -37,12 +37,12 @@
 }
 
 * {
+  font-family: "Lato", sans-serif;
   margin: 0;
-  font-family: 'Lato', sans-serif;
 }
 
 body {
-  padding: 0;
+  padding: 28.8pt;
 }
 main {
   padding: var(--padding);
@@ -52,13 +52,12 @@ header {
   text-align: center;
   border-bottom: solid 1pt var(--headings);
   padding: var(--padding);
+  padding-top: 0pt;
 
   h1 {
     font-size: 45pt;
     font-weight: 400;
     color: var(--primary);
-    margin: 0;
-
     p {
       display: inline;
     }
@@ -75,9 +74,20 @@ header {
   .contact-me {
     font-size: 12pt;
     color: var(--headings);
-    margin: 0;
   }
 }
+  .project {
+    margin-top: 8pt;
+    p.location {
+      font-size: 10pt;
+      color: var(--headings);
+      padding-bottom: 5pt;
+    }
+
+    p.description {
+      padding-bottom: 5pt;
+    }
+  }
 
 section {
   padding: var(--padding);
@@ -88,7 +98,6 @@ section {
     font-size: 20pt;
     font-weight: 300;
     text-transform: uppercase;
-    margin: 0;
   }
 
   h3 {
@@ -97,9 +106,11 @@ section {
     font-size: 12pt;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0;
   }
-
+  ul {
+    list-style-type: "•   ";
+    margin-left: -16pt;
+  }
   li {
     font-size: 12pt;
     font-weight: 300;
@@ -108,18 +119,6 @@ section {
 
   b {
     text-transform: capitalize;
-  }
-
-  .project {
-    p.location {
-      font-size: 10pt;
-      color: var(--headings);
-      padding-bottom: 5pt;
-    }
-
-    p.description {
-      padding-bottom: 5pt;
-    }
   }
 
   .skill-category li {
@@ -146,11 +145,19 @@ section {
 
   body {
     background: white;
-    margin: 0;
+    padding: 0pt;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+  .page-break {
+    page-break-before: always; /* Start on new page */
+    break-before: page; /* Modern equivalent for multi-browser support */
+  }
+  .no-break {
+    page-break-inside: avoid; /* Prevent breaking within element */
+    break-inside: avoid;
   }
 }
