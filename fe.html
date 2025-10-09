@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="full-name">
+        <p class="first">Abhishek</p>
+        <p class="last">Singh</p>
+      </h1>
+      <p class="contact-me">
+        +91 9884177514 |
+        <a href="mailto:hiabhishek1997here@gmail.com">hiabhishek1997here@gmail.com</a>
+      </p>
+      <p class="contact-me">
+        <a href="https://github.com/8manrocks">github</a> |
+        <a href="https://www.linkedin.com/in/abhishek-singh-60646320a">linkedin</a>
+      </p>
+    </header>
+
+    <main>
+      <!-- Professional Highlights -->
+      <section id="professional-highlights">
+        <h2>PROFESSIONAL HIGHLIGHTS</h2>
+        <div class="highlights">
+          <ul>
+            <li>Architected and implemented <b>multi-tenant SSO</b> with <b>PKCE</b> and dynamic registration compliant with the <b>MCP</b> specification.</li>
+            <li>Built the <b>Agentic Framework UI</b> with <b>WebSocket</b>-based chat and <b>Redis</b>-backed persistence for user-created AI agents.</li>
+            <li>Led framework migrations from Angular 16 to 19. Created <b>Schematics</b> for convenient downstream adoption of updates</li>
+            <li>Enhanced accessibility and performance using <b>NVDA</b> testing, lazy loading, and <b>Service Worker</b>–based offline caching.</li>
+            <li>Integrated <b>Cypress</b> E2E tests into <b>Jenkins</b> CI.</li>
+            <li>Experience with backend technologies such as <b>NestJS</b> and <b>Springboot</b>, primarily for aggregation of down stream services or as BFF layers.</li>
+            <li>Integrated observability with <b>Datadog</b>, <b>LogRocket</b>, and <b>ELK</b>, exposing latency, token use, and session health.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <h2>EXPERIENCE</h2>
+
+        <div class="project">
+          <h3>SIEMENS<span class="description">&#160;|&#160;Software Engineer</span></h3>
+          <p class="location">March 2024 - Present | Remote</p>
+          <ul>
+            <li>Implemented multi-tenant SSO with <b>dynamic client registration</b>, auth-server discovery via <b>PRM</b>, and full <b>PKCE</b>/token lifecycle management per <b>MCP</b>.</li>
+            <li>Built the Agentic Framework UI enabling users to create and chat with custom agents via a <b>WebSocket</b> interface; channels maintained using <b>Redis pub/sub</b> with asynchronous backups.</li>
+            <li>Developed Angular modules for agent creation, configuration, and live conversation management.</li>
+            <li>Created <b>Kibana</b> dashboards for custom metrics: tokens consumed, average time per turn, and agent response latency.</li>
+          </ul>
+        </div>
+
+        <div class="project no-break">
+          <h3>EPAM SYSTEMS<span class="description">&#160;|&#160;Software Engineer</span></h3>
+          <p class="location">Aug 2023 - March 2024 | Gurugram, Haryana</p>
+          <ul>
+            <li>Led migration from <b>Angular 16 -> 19</b> across shared libraries and app modules.</li>
+            <li>Developed reusable <b>Angular Schematics</b> to automate migration for internal teams using our libraries.</li>
+            <li>Updated components and theming to comply with brand/styling evolution updates.</li>
+            <li>Delivered accessibility enhancements  and verified with the <b>NVDA</b> screen reader.</li>
+            <li>Set up <b>Cypress</b> E2E testing wired into <b>Jenkins</b> pipelines for automated regression.</li>
+          </ul>
+        </div>
+
+        <div class="project no-break">
+          <h3>DELOITTE<span class="description">&#160;|&#160;Consultant</span></h3>
+          <p class="location">Jan 2022 – Aug 2023 | Gurugram, Haryana</p>
+          <ul>
+            <li>Migrated a production React app from JSX to TSX in stages using <b>tsc</b> and <b>nodets</b> without breaking compilation.</li>
+            <li>Reduced bundle size by offloading heavy third-party plugins to <b>Service Workers</b>; implemented offline-first caching.</li>
+            <li>Instrumented and automated <b>Redux</b> state synchronization with <b>AWS ElastiCache</b> for continuous backup and fast recovery.</li>
+            <li>Stored user preferences and layouts in <b>DynamoDB</b> for persistent personalization.</li>
+            <li>Owned the BFF layer: a <b>GraphQL</b> backend in <b>NestJS</b> aggregating and shaping data for React clients; added domain APIs for claims and live updates.</li>
+            <li>Integrated telemetry with <b>Datadog</b> to monitor latency and session health.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h3>TATA CONSULTANCY SERVICES<span class="description">&#160;|&#160;Systems Engineer</span></h3>
+          <p class="location">Aug 2019 – Jan 2022 | Indore, Madhya Pradesh</p>
+          <ul>
+            <li>Built Angular dashboards for policyholders with reusable components and shared services.</li>
+            <li>Implemented Reactive Forms, custom directives, and <b>RxJS</b> observables for interactive data handling.</li>
+            <li>Developed <b>Spring Boot</b> APIs for policy and authentication workflows; deployed via <b>Docker</b> on <b>AWS EKS</b>.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills (categories preserved) -->
+      <section id="skills">
+        <h2>SKILLS</h2>
+
+        <div class="skill-category">
+          <h3>FRONTEND TECHNOLOGIES</h3>
+          <ul>
+            <li>JavaScript, TypeScript, Angular, React, HTML, CSS</li>
+            <li>Redux, NgRx, RxJS</li>
+            <li>Bootstrap, Angular Material, Material UI</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>BACKEND & APIs</h3>
+          <ul>
+            <li>Java, Spring Boot, Hibernate, Java EE</li>
+            <li>Node.js, NestJS, Express.js</li>
+            <li>GraphQL</li>
+            <li>PostgreSQL, MongoDB, DynamoDB, Redis</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>CLOUD, DEVOPS & CI/CD</h3>
+          <ul>
+            <li>AWS (EKS, SQS, SNS, S3, CloudWatch, CloudFormation)</li>
+            <li>Docker, Kubernetes</li>
+            <li>Git, Jenkins, Bamboo</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>MONITORING, ANALYTICS & MESSAGING</h3>
+          <ul>
+            <li>Apache Kafka, WebSockets</li>
+            <li>Datadog, LogRocket, Splunk, Quantum Metric, ELK, Kibana</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <div class="certificate">
+          <h3>AWS CERTIFIED DEVELOPER - ASSOCIATE</h3>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <h2>EDUCATION</h2>
+        <div class="qualification">
+          <h3>SRM INSTITUTE OF SCIENCE & TECHNOLOGY<span class="description">&#160;|&#160;Bachelor of technology</span></h3>
+          <p class="location">July 2015 - May 2019 | Chennai, Tamil Nadu</p>
+          <p class="location">Percentage - 85</p>
+          <p class="description">graduated with distinction</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -6,10 +6,7 @@ const path = require("path");
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  const htmlPath = path.resolve(__dirname, "index.html");
-  const html = fs.readFileSync(htmlPath, "utf8");
-
-  await page.goto(`file:${path.resolve(__dirname, "index.html")}`, {
+  await page.goto(`file:${path.resolve(__dirname, "fe.html")}`, {
     waitUntil: "networkidle0",
   });
   await page.pdf({
