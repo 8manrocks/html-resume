@@ -41,6 +41,26 @@ const margins = {
     printBackground: true,
   });
 
+    await page.goto(`file:${path.resolve(__dirname, "large.html")}`, {
+    waitUntil: "networkidle0",
+  });
+  await page.pdf({
+    path: "large.pdf",
+    format: "A4",
+    margin: margins,
+    printBackground: true,
+  });
+
+    await page.goto(`file:${path.resolve(__dirname, "8man-large.html")}`, {
+    waitUntil: "networkidle0",
+  });
+  await page.pdf({
+    path: "8man-large.pdf",
+    format: "A4",
+    margin: margins,
+    printBackground: true,
+  });
+
   await browser.close();
   console.log("PDF generated as resume.pdf");
 })();
