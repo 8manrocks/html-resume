@@ -29,9 +29,12 @@ Add or modify `.json` files in the `resume-bundles/` directory.
 - `basics`: Name, contact info.
 - `professional_highlights` (optional): List of highlights.
 - `experience`: List of roles with `tech_stack` (optional) and `highlights`.
-- `skills`: Categorized skills. item lists can contain HTML.
+- `skills`: Categorized skills (`category` + comma-separated `items` string).
 - `certifications`: List of certs.
 - `education`: Degree, institution, etc.
+
+**Formatting:**
+- Use `[b]text[/b]` for bold text (converted to `<b>` tags during generation).
 
 ### 3. Build (Generate HTML & PDF)
 

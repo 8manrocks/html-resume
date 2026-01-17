@@ -46,25 +46,30 @@ fs.readdir(bundlesDir, (err, files) => {
 });
 
 function generateHTML(resume) {
+    const processText = (text) => {
+        if (!text) return text;
+        return text.replace(/\[b\]/g, '<b>').replace(/\[\/b\]/g, '</b>');
+    };
+
     return `<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${resume.basics.name} resume</title>
+    <title>${processText(resume.basics.name)} resume</title>
     <link rel="stylesheet" href="../styles.css" />
 </head>
 
 <body>
     <header>
         <h1 id="full-name">
-            <p class="first">${resume.basics.name.split(' ')[0]}</p>
-            <p class="last">${resume.basics.name.split(' ').slice(1).join(' ')}</p>
+            <p class="first">${processText(resume.basics.name.split(' ')[0])}</p>
+            <p class="last">${processText(resume.basics.name.split(' ').slice(1).join(' '))}</p>
         </h1>
         <p class="contact-me">
-            ${resume.basics.contact.phone} |
-            <a href="mailto:${resume.basics.contact.email}">${resume.basics.contact.email}</a> |
+            ${processText(resume.basics.contact.phone)} |
+            <a href="mailto:${resume.basics.contact.email}">${processText(resume.basics.contact.email)}</a> |
             <a href="${resume.basics.contact.github}">github</a> |
             <a href="${resume.basics.contact.linkedin}">linkedin</a>
         </p>
@@ -76,7 +81,7 @@ function generateHTML(resume) {
             <h2>PROFESSIONAL HIGHLIGHTS</h2>
             <div class="highlights">
                 <ul>
-${resume.professional_highlights.map(item => `                    <li>${item}</li>`).join('\n')}
+${resume.professional_highlights.map(item => `                    <li>${processText(item)}</li>`).join('\n')}
                 </ul>
             </div>
         </section>
@@ -86,11 +91,11 @@ ${resume.professional_highlights.map(item => `                    <li>${item}</l
             <h2>EXPERIENCE</h2>
 ${resume.experience.map((exp, index) => `
             <div class="project${index === 0 ? ' mt-0' : ''}">
-                <h3>${exp.company} <span class="description">&#160;|&#160;${exp.role}</span></h3>
-                <p class="location">${exp.period} | ${exp.location}</p>
-                ${exp.tech_stack ? `<p class="description">${exp.tech_stack}</p>` : ''}
+                <h3>${processText(exp.company)} <span class="description">&#160;|&#160;${processText(exp.role)}</span></h3>
+                <p class="location">${processText(exp.period)} | ${processText(exp.location)}</p>
+                ${exp.tech_stack ? `<p class="description">${processText(exp.tech_stack)}</p>` : ''}
                 <ul>
-${exp.highlights.map(highlight => `                    <li>${highlight}</li>`).join('\n')}
+${exp.highlights.map(highlight => `                    <li>${processText(highlight)}</li>`).join('\n')}
                 </ul>
             </div>
 `).join('')}
@@ -98,22 +103,18 @@ ${exp.highlights.map(highlight => `                    <li>${highlight}</li>`).j
 
         <section id="skills">
             <h2>SKILLS</h2>
-${resume.skills.map((skill, index) => {
-        const isList = skill.items.trim().startsWith('<ul');
-        return `
+${resume.skills.map((skill, index) => `
             <div class="skill-category${index === 0 ? ' mt-0' : ''}">
-                ${isList ? `<h3>${skill.category}</h3>` : `<span>${skill.category}: </span>`}
-                ${skill.items}
+                <span>${processText(skill.category)}: </span>${processText(skill.items)}
             </div>
-`;
-    }).join('')}
+`).join('')}
         </section>
 
         <section id="certifications">
             <h2>CERTIFICATIONS</h2>
 ${resume.certifications.map(cert => `
             <div class="certificate">
-                <h3>${cert}</h3>
+                <h3>${processText(cert)}</h3>
             </div>
 `).join('')}
         </section>
@@ -122,10 +123,10 @@ ${resume.certifications.map(cert => `
             <h2>EDUCATION</h2>
 ${resume.education.map(edu => `
             <div class="qualification">
-                <h3>${edu.institution} <span class="description">&#160;|&#160;${edu.degree}</span></h3>
-                <p class="location">${edu.period} | ${edu.location}</p>
-                ${edu.score ? `<p class="location">${edu.score}</p>` : ''}
-                <p class="description">${edu.description}</p>
+                <h3>${processText(edu.institution)} <span class="description">&#160;|&#160;${processText(edu.degree)}</span></h3>
+                <p class="location">${processText(edu.period)} | ${processText(edu.location)}</p>
+                ${edu.score ? `<p class="location">${processText(edu.score)}</p>` : ''}
+                <p class="description">${processText(edu.description)}</p>
             </div>
 `).join('')}
         </section>

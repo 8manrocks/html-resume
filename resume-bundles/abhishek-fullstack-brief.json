@@ -15,10 +15,10 @@
             "period": "Mar 2024 – Present",
             "location": "Bangalore",
             "highlights": [
-                "Built an <b>agentic AI framework</b> with a reasoning loop and <b>Model Context Protocol (MCP)</b> integration.",
-                "Implemented multi-tenant <b>SSO</b> with <b>dynamic client registration</b>, auth-server discovery via <b>PRM</b>, and full <b>PKCE</b> / token-lifecycle management as per <b>MCP</b>.",
-                "Developed a <b>WebSocket</b>-based chat interface backed by <b>Redis pub/sub</b> for message channels and asynchronous backups to <b>S3</b>.",
-                "Created <b>Kibana</b> dashboards for metrics including tokens consumed, average response time, and agent latency."
+                "Built an [b]agentic AI framework[/b] with a reasoning loop and [b]Model Context Protocol (MCP)[/b] integration.",
+                "Implemented multi-tenant [b]SSO[/b] with [b]dynamic client registration[/b], auth-server discovery via [b]PRM[/b], and full [b]PKCE[/b] / token-lifecycle management as per [b]MCP[/b].",
+                "Developed a [b]WebSocket[/b]-based chat interface backed by [b]Redis pub/sub[/b] for message channels and asynchronous backups to [b]S3[/b].",
+                "Created [b]Kibana[/b] dashboards for metrics including tokens consumed, average response time, and agent latency."
             ]
         },
         {
@@ -27,9 +27,9 @@
             "period": "Aug 2023 – Mar 2024",
             "location": "Gurugram",
             "highlights": [
-                "Developed an <b>Enterprise Service Bus (ESB)</b> supporting data transformation and parallel batch execution.",
-                "Led migration from <b>Angular 16 -> 19</b> and <b>Jakarta 8 -> 10</b> across shared libraries and app modules, including creation of migration scripts and guildes for upstream consumers.",
-                "Ensured 90% plus unit test code coverage using <b>Karma, Junit & Mockito</b> as well as end to end testing using <b>Cypress</b>."
+                "Developed an [b]Enterprise Service Bus (ESB)[/b] supporting data transformation and parallel batch execution.",
+                "Led migration from [b]Angular 16 -> 19[/b] and [b]Jakarta 8 -> 10[/b] across shared libraries and app modules, including creation of migration scripts and guildes for upstream consumers.",
+                "Ensured 90% plus unit test code coverage using [b]Karma, Junit & Mockito[/b] as well as end to end testing using [b]Cypress[/b]."
             ]
         },
         {
@@ -38,8 +38,8 @@
             "period": "Jan 2022 – Aug 2023",
             "location": "Gurugram",
             "highlights": [
-                "Built an insurance claims dashboard using <b>React</b> with fraud-detection using machine learning and a <b>GraphQL</b> aggregation layer to support the dashboard.",
-                "Integrated <b>Kafka</b> and <b>WebSockets</b> for real-time notifications from on-call events."
+                "Built an insurance claims dashboard using [b]React[/b] with fraud-detection using machine learning and a [b]GraphQL[/b] aggregation layer to support the dashboard.",
+                "Integrated [b]Kafka[/b] and [b]WebSockets[/b] for real-time notifications from on-call events."
             ]
         },
         {
@@ -48,8 +48,8 @@
             "period": "Aug 2019 – Jan 2022",
             "location": "Indore",
             "highlights": [
-                "Built an <b>Angular</b> dashboard consuming <b>REST APIs</b> built using <b>Springboot</b> for policyholder information.",
-                "Migrated on-premise services to <b>AWS EKS</b>."
+                "Built an [b]Angular[/b] dashboard consuming [b]REST APIs[/b] built using [b]Springboot[/b] for policyholder information.",
+                "Migrated on-premise services to [b]AWS EKS[/b]."
             ]
         }
     ],

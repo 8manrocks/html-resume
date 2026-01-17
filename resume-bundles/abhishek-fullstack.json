@@ -10,14 +10,14 @@
     },
     "professional_highlights": [
         "6 years of experience in full-stack development across finance, insurance, retail, telecom, and HR domains.",
-        "Built an <b>agentic AI</b> framework with a reasoning loop to create and interact with custom LLM-based agents, with support for third-party agents via <b>Model Context Protocol (MCP)</b> integration.",
-        "Built REST and <b>GraphQL</b> APIs using <b>Java</b>, <b>Spring Boot</b>, and <b>NestJS</b>; handled auth, throttling, caching, and fault tolerance; scaled to handle <b>10,000+</b> users.",
-        "Built front-end interfaces using <b>Angular</b>, <b>React</b>, and <b>Material</b> libraries with focus on accessibility and offline support; optimized to reduce initial load times by <b>40%</b>.",
-        "Used <b>PostgreSQL</b>, <b>MySQL</b>, <b>MongoDB</b>, and <b>DynamoDB</b>; optimized indexes and queries for low-latency reads and configured replication for availability.",
-        "<b>AWS</b> Certified Developer – Associate; provisioned a variety of <b>AWS</b> services with <b>CloudFormation</b> for <b>IaC</b>.",
-        "Integrated <b>Datadog</b>, <b>ELK</b>, <b>Grafana</b>, and <b>LogRocket</b> for monitoring, debugging, and usage analytics.",
-        "Used <b>Docker</b> and <b>Kubernetes</b> for container builds, orchestration, and scaling.",
-        "Practiced <b>TDD</b> using <b>JUnit</b>, <b>Mockito</b>, <b>jest</b>, and <b>jasmine</b>. Strong advocate for <b>agile</b>."
+        "Built an [b]agentic AI[/b] framework with a reasoning loop to create and interact with custom LLM-based agents, with support for third-party agents via [b]Model Context Protocol (MCP)[/b] integration.",
+        "Built REST and [b]GraphQL[/b] APIs using [b]Java[/b], [b]Spring Boot[/b], and [b]NestJS[/b]; handled auth, throttling, caching, and fault tolerance; scaled to handle [b]10,000+[/b] users.",
+        "Built front-end interfaces using [b]Angular[/b], [b]React[/b], and [b]Material[/b] libraries with focus on accessibility and offline support; optimized to reduce initial load times by [b]40%[/b].",
+        "Used [b]PostgreSQL[/b], [b]MySQL[/b], [b]MongoDB[/b], and [b]DynamoDB[/b]; optimized indexes and queries for low-latency reads and configured replication for availability.",
+        "[b]AWS[/b] Certified Developer – Associate; provisioned a variety of [b]AWS[/b] services with [b]CloudFormation[/b] for [b]IaC[/b].",
+        "Integrated [b]Datadog[/b], [b]ELK[/b], [b]Grafana[/b], and [b]LogRocket[/b] for monitoring, debugging, and usage analytics.",
+        "Used [b]Docker[/b] and [b]Kubernetes[/b] for container builds, orchestration, and scaling.",
+        "Practiced [b]TDD[/b] using [b]JUnit[/b], [b]Mockito[/b], [b]jest[/b], and [b]jasmine[/b]. Strong advocate for [b]agile[/b]."
     ],
     "experience": [
         {
@@ -27,11 +27,11 @@
             "location": "Remote",
             "tech_stack": "Tech Stack - Java | Springboot | Angular | PostgreSQL | AWS",
             "highlights": [
-                "Built <b>agentic AI framework</b> with <b>reasoning loop</b> for <b>LLM-based multi-modal agent</b> creation and third-party integration via <b>Model Context Protocol (MCP)</b>.",
-                "Implemented <b>dynamic tool orchestrator</b> with external tool integration, <b>execution scheduling</b>, and real-time alerts.",
-                "Applied <b>Chain of Thought</b> and <b>Act-First</b> prompting to reduce token usage by <b>30%</b>.",
-                "Integrated observability to track <b>token consumption</b>, <b>execution latency</b>, and <b>user satisfaction</b>.",
-                "Enabled <b>agent-to-tool</b> and <b>agent-to-agent</b> communication with controlled context sharing and execution flow."
+                "Built [b]agentic AI framework[/b] with [b]reasoning loop[/b] for [b]LLM-based multi-modal agent[/b] creation and third-party integration via [b]Model Context Protocol (MCP)[/b].",
+                "Implemented [b]dynamic tool orchestrator[/b] with external tool integration, [b]execution scheduling[/b], and real-time alerts.",
+                "Applied [b]Chain of Thought[/b] and [b]Act-First[/b] prompting to reduce token usage by [b]30%[/b].",
+                "Integrated observability to track [b]token consumption[/b], [b]execution latency[/b], and [b]user satisfaction[/b].",
+                "Enabled [b]agent-to-tool[/b] and [b]agent-to-agent[/b] communication with controlled context sharing and execution flow."
             ]
         },
         {
@@ -41,9 +41,9 @@
             "location": "Gurugram, Haryana",
             "tech_stack": "Tech Stack - Java | Springboot | React | PostgreSQL | AWS",
             "highlights": [
-                "Developed an <b>Enterprise Service Bus (ESB)</b> with <b>custom data transformation</b>, <b>batch processing</b>, and <b>parallelization</b> to reduce exchange latency by <b>40%</b>.",
-                "Built an <b>Asset Classification and Protection (ACP)</b> tool with <b>SOP modeler</b>, enforced <b>Role-Based Access Control (RBAC)</b> and <b>audit logging</b> per asset and procedure.",
-                "Implemented <b>real-time alerts</b> and <b>anomaly detection</b> for unauthorized changes across physical and virtual assets."
+                "Developed an [b]Enterprise Service Bus (ESB)[/b] with [b]custom data transformation[/b], [b]batch processing[/b], and [b]parallelization[/b] to reduce exchange latency by [b]40%[/b].",
+                "Built an [b]Asset Classification and Protection (ACP)[/b] tool with [b]SOP modeler[/b], enforced [b]Role-Based Access Control (RBAC)[/b] and [b]audit logging[/b] per asset and procedure.",
+                "Implemented [b]real-time alerts[/b] and [b]anomaly detection[/b] for unauthorized changes across physical and virtual assets."
             ]
         },
         {
@@ -53,9 +53,9 @@
             "location": "Gurugram, Haryana",
             "tech_stack": "Tech Stack - NestJs | React | DynamoDB | AWS",
             "highlights": [
-                "Built claims processing dashboard for insurance ops, using <b>machine learning</b> to flag fraudulent claims.",
-                "Used <b>AWS Step Functions</b> for orchestration across services, unified data access via <b>GraphQL</b>.",
-                "Integrated <b>Kafka</b> with <b>WebSockets</b> for real-time call alerts and event-driven notifications."
+                "Built claims processing dashboard for insurance ops, using [b]machine learning[/b] to flag fraudulent claims.",
+                "Used [b]AWS Step Functions[/b] for orchestration across services, unified data access via [b]GraphQL[/b].",
+                "Integrated [b]Kafka[/b] with [b]WebSockets[/b] for real-time call alerts and event-driven notifications."
             ]
         },
         {
@@ -66,27 +66,27 @@
             "tech_stack": "Tech Stack - Java | Springboot | Angular | MongoDB | AWS",
             "highlights": [
                 "Created a dashboard for policyholders to view insurance details via a unified interface",
-                "Built a <b>Camunda</b>-based workflow to issue <b>Letter of Authority (LOA)</b> to authorized entities",
-                "Migrated application from on-premise servers to <b>AWS</b>, enabling scalability and resilience"
+                "Built a [b]Camunda[/b]-based workflow to issue [b]Letter of Authority (LOA)[/b] to authorized entities",
+                "Migrated application from on-premise servers to [b]AWS[/b], enabling scalability and resilience"
             ]
         }
     ],
     "skills": [
         {
-            "category": "FRONTEND TECHNOLOGIES",
-            "items": "<ul>\n            <li>JavaScript, TypeScript, Angular, React, HTML, CSS</li>\n            <li>Redux, NgRx, RxJS</li>\n            <li>Bootstrap, Angular Material, Material UI</li>\n          </ul>"
+            "category": "Frontend Technologies",
+            "items": "JavaScript, TypeScript, Angular, React, HTML, CSS, Redux, NgRx, RxJS, Bootstrap, Angular Material, Material UI"
         },
         {
-            "category": "BACKEND & APIs",
-            "items": "<ul>\n            <li>Java, Spring Boot, Hibernate, Java EE</li>\n            <li>Node.js, NestJS, Express.js</li>\n            <li>GraphQL</li>\n            <li>PostgreSQL, MongoDB, DynamoDB, Redis</li>\n          </ul>"
+            "category": "Backend & APIs",
+            "items": "Java, Spring Boot, Hibernate, Java EE, Node.js, NestJS, Express.js, GraphQL, PostgreSQL, MongoDB, DynamoDB, Redis"
         },
         {
-            "category": "CLOUD, DEVOPS & CI/CD",
-            "items": "<ul>\n            <li>AWS (ECS, SQS, SNS, S3, CloudWatch, CloudFormation)</li>\n            <li>Docker, Kubernetes</li>\n            <li>Git, Jenkins, Bamboo</li>\n          </ul>"
+            "category": "Cloud, DevOps & CI/CD",
+            "items": "AWS (ECS, SQS, SNS, S3, CloudWatch, CloudFormation), Docker, Kubernetes, Git, Jenkins, Bamboo"
         },
         {
-            "category": "MONITORING, ANALYTICS & MESSAGING",
-            "items": "<ul>\n            <li>Apache Kafka, WebSockets</li>\n            <li>Datadog, LogRocket, Splunk, Quantum Metric, ELK</li>\n          </ul>"
+            "category": "Monitoring, Analytics & Messaging",
+            "items": "Apache Kafka, WebSockets, Datadog, LogRocket, Splunk, Quantum Metric, ELK"
         }
     ],
     "certifications": [

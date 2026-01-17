@@ -1,103 +1,103 @@
 {
-    "basics":  {
-                   "name":  "Abhishek Singh",
-                   "contact":  {
-                                   "phone":  "+91 9884177514",
-                                   "email":  "hiabhishek1997here@gmail.com",
-                                   "github":  "https://github.com/8manrocks",
-                                   "linkedin":  "https://www.linkedin.com/in/abhishek-singh-60646320a"
-                               }
-               },
-    "professional_highlights":  [
-                                    "Architected and implemented \u003cb\u003emulti-tenant SSO\u003c/b\u003e with \u003cb\u003ePKCE\u003c/b\u003e and dynamic registration compliant with the \u003cb\u003eMCP\u003c/b\u003e specification.",
-                                    "Built the \u003cb\u003eAgentic Framework UI\u003c/b\u003e with \u003cb\u003eWebSocket\u003c/b\u003e-based chat and \u003cb\u003eRedis\u003c/b\u003e-backed persistence for user-created AI agents.",
-                                    "Led framework migrations from Angular 16 to 19. Created \u003cb\u003eSchematics\u003c/b\u003e for convenient downstream adoption of updates",
-                                    "Enhanced accessibility and performance using \u003cb\u003eNVDA\u003c/b\u003e testing, lazy loading, and \u003cb\u003eService Worker\u003c/b\u003e–based offline caching.",
-                                    "Integrated \u003cb\u003eCypress\u003c/b\u003e E2E tests into \u003cb\u003eJenkins\u003c/b\u003e CI.",
-                                    "Experience with backend technologies such as \u003cb\u003eNestJS\u003c/b\u003e and \u003cb\u003eSpringboot\u003c/b\u003e, primarily for aggregation of down stream services or as BFF layers.",
-                                    "Integrated observability with \u003cb\u003eDatadog\u003c/b\u003e, \u003cb\u003eLogRocket\u003c/b\u003e, and \u003cb\u003eELK\u003c/b\u003e, exposing latency, token use, and session health."
-                                ],
-    "experience":  [
-                       {
-                           "company":  "SIEMENS",
-                           "role":  "Software Engineer",
-                           "period":  "March 2024 - Present",
-                           "location":  "Remote",
-                           "highlights":  [
-                                              "Implemented multi-tenant SSO with \u003cb\u003edynamic client registration\u003c/b\u003e, auth-server discovery via \u003cb\u003ePRM\u003c/b\u003e, and full \u003cb\u003ePKCE\u003c/b\u003e/token lifecycle management per \u003cb\u003eMCP\u003c/b\u003e.",
-                                              "Built the Agentic Framework UI enabling users to create and chat with custom agents via a \u003cb\u003eWebSocket\u003c/b\u003e interface; channels maintained using \u003cb\u003eRedis pub/sub\u003c/b\u003e with asynchronous backups.",
-                                              "Developed Angular modules for agent creation, configuration, and live conversation management.",
-                                              "Created \u003cb\u003eKibana\u003c/b\u003e dashboards for custom metrics: tokens consumed, average time per turn, and agent response latency."
-                                          ]
-                       },
-                       {
-                           "company":  "EPAM SYSTEMS",
-                           "role":  "Software Engineer",
-                           "period":  "Aug 2023 - March 2024",
-                           "location":  "Gurugram, Haryana",
-                           "highlights":  [
-                                              "Led migration from \u003cb\u003eAngular 16 -\u003e 19\u003c/b\u003e across shared libraries and app modules.",
-                                              "Developed reusable \u003cb\u003eAngular Schematics\u003c/b\u003e to automate migration for internal teams using our libraries.",
-                                              "Updated components and theming to comply with brand/styling evolution updates.",
-                                              "Delivered accessibility enhancements  and verified with the \u003cb\u003eNVDA\u003c/b\u003e screen reader.",
-                                              "Set up \u003cb\u003eCypress\u003c/b\u003e E2E testing wired into \u003cb\u003eJenkins\u003c/b\u003e pipelines for automated regression."
-                                          ]
-                       },
-                       {
-                           "company":  "DELOITTE",
-                           "role":  "Consultant",
-                           "period":  "Jan 2022 – Aug 2023",
-                           "location":  "Gurugram, Haryana",
-                           "highlights":  [
-                                              "Migrated a production React app from JSX to TSX in stages using \u003cb\u003etsc\u003c/b\u003e and \u003cb\u003enodets\u003c/b\u003e without breaking compilation.",
-                                              "Reduced bundle size by offloading heavy third-party plugins to \u003cb\u003eService Workers\u003c/b\u003e; implemented offline-first caching.",
-                                              "Instrumented and automated \u003cb\u003eRedux\u003c/b\u003e state synchronization with \u003cb\u003eAWS ElastiCache\u003c/b\u003e for continuous backup and fast recovery.",
-                                              "Stored user preferences and layouts in \u003cb\u003eDynamoDB\u003c/b\u003e for persistent personalization.",
-                                              "Owned the BFF layer: a \u003cb\u003eGraphQL\u003c/b\u003e backend in \u003cb\u003eNestJS\u003c/b\u003e aggregating and shaping data for React clients; added domain APIs for claims and live updates.",
-                                              "Integrated telemetry with \u003cb\u003eDatadog\u003c/b\u003e to monitor latency and session health."
-                                          ]
-                       },
-                       {
-                           "company":  "TATA CONSULTANCY SERVICES",
-                           "role":  "Systems Engineer",
-                           "period":  "Aug 2019 – Jan 2022",
-                           "location":  "Indore, Madhya Pradesh",
-                           "highlights":  [
-                                              "Built Angular dashboards for policyholders with reusable components and shared services.",
-                                              "Implemented Reactive Forms, custom directives, and \u003cb\u003eRxJS\u003c/b\u003e observables for interactive data handling.",
-                                              "Developed \u003cb\u003eSpring Boot\u003c/b\u003e APIs for policy and authentication workflows; deployed via \u003cb\u003eDocker\u003c/b\u003e on \u003cb\u003eAWS EKS\u003c/b\u003e."
-                                          ]
-                       }
-                   ],
-    "skills":  [
-                   {
-                       "category":  "FRONTEND TECHNOLOGIES",
-                       "items":  "\u003cul\u003e\n            \u003cli\u003eJavaScript, TypeScript, Angular, React, HTML, CSS\u003c/li\u003e\n            \u003cli\u003eRedux, NgRx, RxJS\u003c/li\u003e\n            \u003cli\u003eBootstrap, Angular Material, Material UI\u003c/li\u003e\n          \u003c/ul\u003e"
-                   },
-                   {
-                       "category":  "BACKEND \u0026 APIs",
-                       "items":  "\u003cul\u003e\n            \u003cli\u003eJava, Spring Boot, Hibernate, Java EE\u003c/li\u003e\n            \u003cli\u003eNode.js, NestJS, Express.js\u003c/li\u003e\n            \u003cli\u003eGraphQL\u003c/li\u003e\n            \u003cli\u003ePostgreSQL, MongoDB, DynamoDB, Redis\u003c/li\u003e\n          \u003c/ul\u003e"
-                   },
-                   {
-                       "category":  "CLOUD, DEVOPS \u0026 CI/CD",
-                       "items":  "\u003cul\u003e\n            \u003cli\u003eAWS (EKS, SQS, SNS, S3, CloudWatch, CloudFormation)\u003c/li\u003e\n            \u003cli\u003eDocker, Kubernetes\u003c/li\u003e\n            \u003cli\u003eGit, Jenkins, Bamboo\u003c/li\u003e\n          \u003c/ul\u003e"
-                   },
-                   {
-                       "category":  "MONITORING, ANALYTICS \u0026 MESSAGING",
-                       "items":  "\u003cul\u003e\n            \u003cli\u003eApache Kafka, WebSockets\u003c/li\u003e\n            \u003cli\u003eDatadog, LogRocket, Splunk, Quantum Metric, ELK, Kibana\u003c/li\u003e\n          \u003c/ul\u003e"
-                   }
-               ],
-    "certifications":  [
-                           "AWS CERTIFIED DEVELOPER - ASSOCIATE"
-                       ],
-    "education":  [
-                      {
-                          "institution":  "SRM INSTITUTE OF SCIENCE \u0026 TECHNOLOGY",
-                          "degree":  "Bachelor of technology",
-                          "period":  "July 2015 - May 2019",
-                          "location":  "Chennai, Tamil Nadu",
-                          "description":  "graduated with distinction",
-                          "score":  "Percentage - 85"
-                      }
-                  ]
+    "basics": {
+        "name": "Abhishek Singh",
+        "contact": {
+            "phone": "+91 9884177514",
+            "email": "hiabhishek1997here@gmail.com",
+            "github": "https://github.com/8manrocks",
+            "linkedin": "https://www.linkedin.com/in/abhishek-singh-60646320a"
+        }
+    },
+    "professional_highlights": [
+        "Architected and implemented [b]multi-tenant SSO[/b] with [b]PKCE[/b] and dynamic registration compliant with the [b]MCP[/b] specification.",
+        "Built the [b]Agentic Framework UI[/b] with [b]WebSocket[/b]-based chat and [b]Redis[/b]-backed persistence for user-created AI agents.",
+        "Led framework migrations from Angular 16 to 19. Created [b]Schematics[/b] for convenient downstream adoption of updates",
+        "Enhanced accessibility and performance using [b]NVDA[/b] testing, lazy loading, and [b]Service Worker[/b]–based offline caching.",
+        "Integrated [b]Cypress[/b] E2E tests into [b]Jenkins[/b] CI.",
+        "Experience with backend technologies such as [b]NestJS[/b] and [b]Springboot[/b], primarily for aggregation of down stream services or as BFF layers.",
+        "Integrated observability with [b]Datadog[/b], [b]LogRocket[/b], and [b]ELK[/b], exposing latency, token use, and session health."
+    ],
+    "experience": [
+        {
+            "company": "SIEMENS",
+            "role": "Software Engineer",
+            "period": "March 2024 - Present",
+            "location": "Remote",
+            "highlights": [
+                "Implemented multi-tenant SSO with [b]dynamic client registration[/b], auth-server discovery via [b]PRM[/b], and full [b]PKCE[/b]/token lifecycle management per [b]MCP[/b].",
+                "Built the Agentic Framework UI enabling users to create and chat with custom agents via a [b]WebSocket[/b] interface; channels maintained using [b]Redis pub/sub[/b] with asynchronous backups.",
+                "Developed Angular modules for agent creation, configuration, and live conversation management.",
+                "Created [b]Kibana[/b] dashboards for custom metrics: tokens consumed, average time per turn, and agent response latency."
+            ]
+        },
+        {
+            "company": "EPAM SYSTEMS",
+            "role": "Software Engineer",
+            "period": "Aug 2023 - March 2024",
+            "location": "Gurugram, Haryana",
+            "highlights": [
+                "Led migration from [b]Angular 16 -> 19[/b] across shared libraries and app modules.",
+                "Developed reusable [b]Angular Schematics[/b] to automate migration for internal teams using our libraries.",
+                "Updated components and theming to comply with brand/styling evolution updates.",
+                "Delivered accessibility enhancements  and verified with the [b]NVDA[/b] screen reader.",
+                "Set up [b]Cypress[/b] E2E testing wired into [b]Jenkins[/b] pipelines for automated regression."
+            ]
+        },
+        {
+            "company": "DELOITTE",
+            "role": "Consultant",
+            "period": "Jan 2022 – Aug 2023",
+            "location": "Gurugram, Haryana",
+            "highlights": [
+                "Migrated a production React app from JSX to TSX in stages using [b]tsc[/b] and [b]nodets[/b] without breaking compilation.",
+                "Reduced bundle size by offloading heavy third-party plugins to [b]Service Workers[/b]; implemented offline-first caching.",
+                "Instrumented and automated [b]Redux[/b] state synchronization with [b]AWS ElastiCache[/b] for continuous backup and fast recovery.",
+                "Stored user preferences and layouts in [b]DynamoDB[/b] for persistent personalization.",
+                "Owned the BFF layer: a [b]GraphQL[/b] backend in [b]NestJS[/b] aggregating and shaping data for React clients; added domain APIs for claims and live updates.",
+                "Integrated telemetry with [b]Datadog[/b] to monitor latency and session health."
+            ]
+        },
+        {
+            "company": "TATA CONSULTANCY SERVICES",
+            "role": "Systems Engineer",
+            "period": "Aug 2019 – Jan 2022",
+            "location": "Indore, Madhya Pradesh",
+            "highlights": [
+                "Built Angular dashboards for policyholders with reusable components and shared services.",
+                "Implemented Reactive Forms, custom directives, and [b]RxJS[/b] observables for interactive data handling.",
+                "Developed [b]Spring Boot[/b] APIs for policy and authentication workflows; deployed via [b]Docker[/b] on [b]AWS EKS[/b]."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Frontend Technologies",
+            "items": "JavaScript, TypeScript, Angular, React, HTML, CSS, Redux, NgRx, RxJS, Bootstrap, Angular Material, Material UI"
+        },
+        {
+            "category": "Backend & APIs",
+            "items": "Java, Spring Boot, Hibernate, Java EE, Node.js, NestJS, Express.js, GraphQL, PostgreSQL, MongoDB, DynamoDB, Redis"
+        },
+        {
+            "category": "Cloud, DevOps & CI/CD",
+            "items": "AWS (EKS, SQS, SNS, S3, CloudWatch, CloudFormation), Docker, Kubernetes, Git, Jenkins, Bamboo"
+        },
+        {
+            "category": "Monitoring, Analytics & Messaging",
+            "items": "Apache Kafka, WebSockets, Datadog, LogRocket, Splunk, Quantum Metric, ELK, Kibana"
+        }
+    ],
+    "certifications": [
+        "AWS CERTIFIED DEVELOPER - ASSOCIATE"
+    ],
+    "education": [
+        {
+            "institution": "SRM INSTITUTE OF SCIENCE & TECHNOLOGY",
+            "degree": "Bachelor of technology",
+            "period": "July 2015 - May 2019",
+            "location": "Chennai, Tamil Nadu",
+            "description": "graduated with distinction",
+            "score": "Percentage - 85"
+        }
+    ]
 }
