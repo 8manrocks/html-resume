@@ -1,66 +1,56 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const path = require("path");
+
+const templatesDir = path.join(__dirname, 'generated-templates');
+const outputDir = path.join(__dirname, 'generated-pdfs');
+
 const margins = {
   top: '15mm',
   right: '15mm',
   bottom: '15mm',
   left: '15mm'
 };
+
+// Ensure output directory exists
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
 (async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
+  try {
+    const browser = await puppeteer.launch();
+    const files = fs.readdirSync(templatesDir);
 
-  await page.goto(`file:${path.resolve(__dirname, "index.html")}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: "index.pdf",
-    format: "A4",
-    margin: margins,
-    printBackground: true,
-  });
+    for (const file of files) {
+      if (path.extname(file) === '.html') {
+        const page = await browser.newPage();
+        const templatePath = path.join(templatesDir, file);
+        const pdfName = path.basename(file, '.html') + '.pdf';
+        const pdfPath = path.join(outputDir, pdfName);
 
-  await page.goto(`file:${path.resolve(__dirname, "man.html")}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: "man.pdf",
-    format: "A4",
-    margin: margins,
-    printBackground: true,
-  });
+        console.log(`Generating PDF for ${file}...`);
 
-  await page.goto(`file:${path.resolve(__dirname, "fe.html")}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: "fe.pdf",
-    format: "A4",
-    margin: margins,
-    printBackground: true,
-  });
+        await page.goto(`file:${templatePath}`, {
+          waitUntil: "networkidle0",
+        });
 
-    await page.goto(`file:${path.resolve(__dirname, "large.html")}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: "large.pdf",
-    format: "A4",
-    margin: margins,
-    printBackground: true,
-  });
+        await page.pdf({
+          path: pdfPath,
+          format: "A4",
+          margin: margins,
+          printBackground: true,
+        });
 
-    await page.goto(`file:${path.resolve(__dirname, "8man-large.html")}`, {
-    waitUntil: "networkidle0",
-  });
-  await page.pdf({
-    path: "8man-large.pdf",
-    format: "A4",
-    margin: margins,
-    printBackground: true,
-  });
+        console.log(`Generated ${pdfName}`);
+        await page.close();
+      }
+    }
 
-  await browser.close();
-  console.log("PDF generated as resume.pdf");
+    await browser.close();
+    console.log("All PDFs generated successfully.");
+  } catch (err) {
+    console.error("Error generating PDFs:", err);
+    process.exit(1);
+  }
 })();

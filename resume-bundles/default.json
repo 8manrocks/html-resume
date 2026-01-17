@@ -1,0 +1,90 @@
+{
+    "basics": {
+        "name": "Abhishek Singh",
+        "contact": {
+            "phone": "+91 9884177514",
+            "email": "hiabhishek1997here@gmail.com",
+            "github": "https://github.com/8manrocks",
+            "linkedin": "https://www.linkedin.com/in/abhishek-singh-60646320a"
+        }
+    },
+    "experience": [
+        {
+            "company": "Siemens",
+            "role": "Software Engineer",
+            "period": "Mar 2024 – Present",
+            "location": "Bangalore",
+            "highlights": [
+                "Built an <b>agentic AI framework</b> with a reasoning loop and <b>Model Context Protocol (MCP)</b> integration.",
+                "Implemented multi-tenant <b>SSO</b> with <b>dynamic client registration</b>, auth-server discovery via <b>PRM</b>, and full <b>PKCE</b> / token-lifecycle management as per <b>MCP</b>.",
+                "Developed a <b>WebSocket</b>-based chat interface backed by <b>Redis pub/sub</b> for message channels and asynchronous backups to <b>S3</b>.",
+                "Created <b>Kibana</b> dashboards for metrics including tokens consumed, average response time, and agent latency."
+            ]
+        },
+        {
+            "company": "EPAM Systems",
+            "role": "Software Engineer",
+            "period": "Aug 2023 – Mar 2024",
+            "location": "Gurugram",
+            "highlights": [
+                "Developed an <b>Enterprise Service Bus (ESB)</b> supporting data transformation and parallel batch execution.",
+                "Led migration from <b>Angular 16 -> 19</b> and <b>Jakarta 8 -> 10</b> across shared libraries and app modules, including creation of migration scripts and guildes for upstream consumers.",
+                "Ensured 90% plus unit test code coverage using <b>Karma, Junit & Mockito</b> as well as end to end testing using <b>Cypress</b>."
+            ]
+        },
+        {
+            "company": "Deloitte",
+            "role": "Consultant",
+            "period": "Jan 2022 – Aug 2023",
+            "location": "Gurugram",
+            "highlights": [
+                "Built an insurance claims dashboard using <b>React</b> with fraud-detection using machine learning and a <b>GraphQL</b> aggregation layer to support the dashboard.",
+                "Integrated <b>Kafka</b> and <b>WebSockets</b> for real-time notifications from on-call events."
+            ]
+        },
+        {
+            "company": "Tata Consultancy Services",
+            "role": "Systems Engineer",
+            "period": "Aug 2019 – Jan 2022",
+            "location": "Indore",
+            "highlights": [
+                "Built an <b>Angular</b> dashboard consuming <b>REST APIs</b> built using <b>Springboot</b> for policyholder information.",
+                "Migrated on-premise services to <b>AWS EKS</b>."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Languages",
+            "items": "Java, C++, TypeScript, JavaScript, SQL, HTML, CSS"
+        },
+        {
+            "category": "Frameworks",
+            "items": "Spring Boot, Hibernate, Java EE, Node.js, Angular, React"
+        },
+        {
+            "category": "Databases",
+            "items": "PostgreSQL, MongoDB, DynamoDB, Redis"
+        },
+        {
+            "category": "Cloud / DevOps",
+            "items": "AWS (EKS, SQS, S3, CloudWatch), Docker, Kubernetes, Git, Jenkins"
+        },
+        {
+            "category": "Monitoring / Messaging",
+            "items": "Kafka, WebSockets, Datadog, ELK, Grafana"
+        }
+    ],
+    "certifications": [
+        "AWS Certified Developer – Associate"
+    ],
+    "education": [
+        {
+            "institution": "SRM Institute of Science and Technology",
+            "degree": "Bachelor of Technology",
+            "period": "Jul 2015 – May 2019",
+            "location": "Chennai, Tamil Nadu",
+            "description": "Graduated with Distinction"
+        }
+    ]
+}
