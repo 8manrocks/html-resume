@@ -1,0 +1,124 @@
+{
+    "basics": {
+        "name": "Aniket Singh",
+        "role": "Software Developer",
+        "contact": {
+            "phone": "+91 8178207040",
+            "email": "hianiket2003here@gmail.com",
+            "github": "https://github.com/Aniket1973",
+            "linkedin": "https://www.linkedin.com/in/aniket-singh-8a3818270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        }
+    },
+    "professional_highlights": [
+        "Final-year IT student with hands-on software development experience in full-stack web applications and system programming.",
+        "Proven ability to build scalable applications using modern frameworks with strong foundation in data structures, algorithms, and software engineering principles."
+    ],
+    "achievements": [
+        "Wrote and Submitted a Research Paper for the 2025 AAII Conference.",
+        "Ranked 2nd among participants in the 'HackRush Competitive Programming Event'.",
+        "Secured 2nd position in ByteFiesta of CodeWarriors Club at Amity University, Noida."
+    ],
+    "experience": [
+        {
+            "company": "Airports Authority of India",
+            "role": "IT Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Delhi (On-Site)",
+            "highlights": [
+                "Gained 100% exposure to enterprise IT infrastructure and network systems.",
+                "Assisted in system documentation and technical process improvement initiatives from 50% to 80%."
+            ]
+        },
+        {
+            "company": "Marksman Technologies Pvt. Ltd.",
+            "role": "AI and Automation Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Online",
+            "highlights": [
+                "Programmed and deployed an 100% AI powered Spam Detection System using NLP, Machine Learning and Streamlit."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Health Guardian – Healthcare Web Platform",
+            "role": "Full Stack Developer",
+            "tech_stack": "Python | Machine Learning | HTML | CSS",
+            "highlights": [
+                "Engineered Health Guardian, a web-based platform integrating Python-based machine learning models for disease detection (pneumonia, Parkinson's, heart disease, diabetes) to deliver accurate health insights.",
+                "Implemented a mental health chatbot using Crew AI and AI-driven medicine, workout, and diet recommendation systems, enhancing user engagement and personalized healthcare support through HTML, CSS, and backend integration."
+            ]
+        },
+        {
+            "name": "Inventory Management System",
+            "role": "Developer",
+            "tech_stack": "PHP | Apache | SQL",
+            "highlights": [
+                "Designed and developed a Complaint Management System using PHP, Apache, and SQL to digitize complaint registration, tracking, and resolution processes.",
+                "Implemented a database-driven workflow to store, retrieve, and manage complaints efficiently, reducing manual handling and response delays."
+            ]
+        },
+        {
+            "name": "Digitalization of cultural heritage",
+            "role": "AI Developer",
+            "tech_stack": "Deep Learning | ESRGAN",
+            "highlights": [
+                "Developed a Digital Cultural Heritage Preservation System using Deep Learning and AI to restore, classify, and digitally preserve Indian monuments and artifacts.",
+                "Applied ESRGAN (Super-Resolution GAN) to enhance low-quality and degraded heritage images, improving visual clarity and detail."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Languages",
+            "items": "Java, JavaScript, SQL, HTML, CSS"
+        },
+        {
+            "category": "Frameworks & Libraries",
+            "items": "React, Node.js, Express.js, SpringBoot, Flask, Three.js, WebXR, Streamlit"
+        },
+        {
+            "category": "AI/ML & Data Science",
+            "items": "Artificial Intelligence, Machine Learning, Deep Learning, Gen AI, CNN, NLP, Pandas, NumPy"
+        },
+        {
+            "category": "Tools & Concepts",
+            "items": "Git, Jira, Power BI, MongoDB, NetBeans, Visual Studio Code, Jupyter Notebook, OOP, Data Structures, Algorithms"
+        }
+    ],
+    "certifications": [
+        "Oracle Cloud Infrastructure 2025 Certified Java Foundations Associate",
+        "Cisco Networking Academy: Python Essentials and CCNA",
+        "NVIDIA: Fundamentals of Deep Learning",
+        "Cisco Networking Academy: Cybersecurity Essentials",
+        "Scaler: Java Course - Mastering the Fundamentals",
+        "GeeksForGeeks: MongoDB",
+        "NPTEL: Patent Drafting for Beginners"
+    ],
+    "education": [
+        {
+            "institution": "Amity University, Noida",
+            "degree": "Bachelor of Technology in Information Technology",
+            "period": "2022 – Present",
+            "location": "Noida",
+            "score": "CGPA: 7.4/10"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade - XIIth, CBSE",
+            "period": "2021 – 2022",
+            "location": "Noida",
+            "score": "Percentage: 63"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade - Xth, CBSE",
+            "period": "2019 – 2020",
+            "location": "Noida",
+            "score": "Percentage: 69"
+        }
+    ],
+    "additionalStylings": {
+        "projects": "page-break-after: always; border-bottom: none;"
+    }
+}

@@ -76,8 +76,14 @@ function generateHTML(resume) {
     </header>
 
     <main>
+        ${resume.summary ? `
+        <section id="summary"${resume.additionalStylings && resume.additionalStylings['summary'] ? ` style="${resume.additionalStylings['summary']}"` : ''}>
+            <p style="text-align: center; font-style: italic;">${processText(resume.summary)}</p>
+        </section>
+        ` : ''}
+
         ${resume.professional_highlights ? `
-        <section id="professional-highlights">
+        <section id="professional-highlights"${resume.additionalStylings && resume.additionalStylings['professional-highlights'] ? ` style="${resume.additionalStylings['professional-highlights']}"` : ''}>
             <h2>PROFESSIONAL HIGHLIGHTS</h2>
             <div class="highlights">
                 <ul>
@@ -87,7 +93,8 @@ ${resume.professional_highlights.map(item => `                    <li>${processT
         </section>
         ` : ''}
 
-        <section id="experience">
+        ${resume.experience ? `
+        <section id="experience"${resume.additionalStylings && resume.additionalStylings['experience'] ? ` style="${resume.additionalStylings['experience']}"` : ''}>
             <h2>EXPERIENCE</h2>
 ${resume.experience.map((exp, index) => `
             <div class="project${index === 0 ? ' mt-0' : ''}">
@@ -100,8 +107,26 @@ ${exp.highlights.map(highlight => `                    <li>${processText(highlig
             </div>
 `).join('')}
         </section>
+        ` : ''}
 
-        <section id="skills">
+        ${resume.projects ? `
+        <section id="projects"${resume.additionalStylings && resume.additionalStylings['projects'] ? ` style="${resume.additionalStylings['projects']}"` : ''}>
+            <h2>PROJECTS</h2>
+${resume.projects.map((proj, index) => `
+            <div class="project${index === 0 ? ' mt-0' : ''}">
+                <h3>${processText(proj.name)} <span class="description">&#160;|&#160;${processText(proj.role)}</span></h3>
+                <p class="location">${processText(proj.period || '')} ${proj.location ? `| ${processText(proj.location)}` : ''}</p>
+                ${proj.tech_stack ? `<p class="description">${processText(proj.tech_stack)}</p>` : ''}
+                <ul>
+${proj.highlights.map(highlight => `                    <li>${processText(highlight)}</li>`).join('\n')}
+                </ul>
+            </div>
+`).join('')}
+        </section>
+        ` : ''}
+
+        ${resume.skills ? `
+        <section id="skills"${resume.additionalStylings && resume.additionalStylings['skills'] ? ` style="${resume.additionalStylings['skills']}"` : ''}>
             <h2>SKILLS</h2>
 ${resume.skills.map((skill, index) => `
             <div class="skill-category${index === 0 ? ' mt-0' : ''}">
@@ -109,8 +134,10 @@ ${resume.skills.map((skill, index) => `
             </div>
 `).join('')}
         </section>
+        ` : ''}
 
-        <section id="certifications">
+        ${resume.certifications ? `
+        <section id="certifications"${resume.additionalStylings && resume.additionalStylings['certifications'] ? ` style="${resume.additionalStylings['certifications']}"` : ''}>
             <h2>CERTIFICATIONS</h2>
 ${resume.certifications.map(cert => `
             <div class="certificate">
@@ -118,18 +145,33 @@ ${resume.certifications.map(cert => `
             </div>
 `).join('')}
         </section>
+        ` : ''}
 
-        <section id="education" class="bb-none">
+        ${resume.achievements ? `
+        <section id="achievements"${resume.additionalStylings && resume.additionalStylings['achievements'] ? ` style="${resume.additionalStylings['achievements']}"` : ''}>
+            <h2>ACHIEVEMENTS</h2>
+            <div class="highlights">
+                <ul>
+${resume.achievements.map(item => `                    <li>${processText(item)}</li>`).join('\n')}
+                </ul>
+            </div>
+        </section>
+        ` : ''}
+
+        ${resume.education ? `
+        <section id="education"${resume.additionalStylings && resume.additionalStylings['education'] ? ` style="${resume.additionalStylings['education']}"` : ''}>
             <h2>EDUCATION</h2>
 ${resume.education.map(edu => `
             <div class="qualification">
                 <h3>${processText(edu.institution)} <span class="description">&#160;|&#160;${processText(edu.degree)}</span></h3>
                 <p class="location">${processText(edu.period)} | ${processText(edu.location)}</p>
                 ${edu.score ? `<p class="location">${processText(edu.score)}</p>` : ''}
-                <p class="description">${processText(edu.description)}</p>
+                ${edu.description ? `<p class="description">${processText(edu.description)}</p>` : ''}
             </div>
 `).join('')}
         </section>
+        ` : ''}
+
     </main>
 </body>
 

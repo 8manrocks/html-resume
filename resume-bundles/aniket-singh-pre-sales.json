@@ -1,0 +1,121 @@
+{
+    "basics": {
+        "name": "Aniket Singh",
+        "role": "Pre-Sales Consultant",
+        "contact": {
+            "phone": "+91 8178207040",
+            "email": "hianiket2003here@gmail.com",
+            "github": "https://github.com/Aniket1973",
+            "linkedin": "https://www.linkedin.com/in/aniket-singh-8a3818270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        }
+    },
+    "professional_highlights": [
+        "Final-year IT student skilled at translating complex solution capabilities into client-focused narratives for enterprise consulting partners.",
+        "Hands-on experience in building software prototypes while leading discovery sessions, drafting solution briefs, and steering stakeholder alignment for pre-sales pursuits."
+    ],
+    "achievements": [
+        "Presented a solution brief at the 2025 AAII Conference, earning praise for its clarity and business context.",
+        "Placed second in HackRush after delivering a demo rated highly by a mixed technical and business jury for storytelling and engagement.",
+        "Secured second place at ByteFiesta by guiding the team narrative around impact metrics and adoption considerations."
+    ],
+    "experience": [
+        {
+            "company": "Airports Authority of India",
+            "role": "IT Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Delhi (On-Site)",
+            "highlights": [
+                "Mapped stakeholder needs across airport operations and translated them into concise IT briefs that helped the project office prioritize automation pilots.",
+                "Documented process improvements and communicated updates to cross-functional teams, raising clarity on dependencies from 50% to 80%."
+            ]
+        },
+        {
+            "company": "Marksman Technologies Pvt. Ltd.",
+            "role": "AI and Automation Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Online",
+            "highlights": [
+                "Collaborated with clients to frame the spam detection opportunity, documented their acceptance criteria, and set success metrics before building the solution.",
+                "Programmed and demonstrated the AI-powered spam detection system, narrating insights, adoption steps, and ROI to stakeholders during weekly check-ins."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Health Guardian Healthcare Platform",
+            "role": "Full Stack Developer",
+            "tech_stack": "Python | Machine Learning | HTML | CSS",
+            "highlights": [
+                "Engineered a platform that integrates disease detection models with clear KPI tracking so healthcare staff can discuss potential automation wins with leadership.",
+                "Built a conversational mental health assistant and recommendation system while crafting pitch materials that highlighted improved engagement for clinicians."
+            ]
+        },
+        {
+            "name": "Inventory Management System",
+            "role": "Developer",
+            "tech_stack": "PHP | Apache | SQL",
+            "highlights": [
+                "Designed a complaint tracking workflow in collaboration with operations to demonstrate how digitization reduces manual follow-ups and cycle time.",
+                "Captured stakeholder feedback and translated it into reporting dashboards that helped decision makers visualize pain points and response gaps."
+            ]
+        },
+        {
+            "name": "Digitalization of Cultural Heritage",
+            "role": "AI Developer",
+            "tech_stack": "Deep Learning | ESRGAN",
+            "highlights": [
+                "Presented the heritage preservation system to cultural bodies by emphasizing restoration benefits and audience engagement improvements.",
+                "Applied ESRGAN to enhance artifacts while narrating how super-resolution previews can drive sponsorship conversations and grant funding."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Technical Skills",
+            "items": "Java, JavaScript, Python, SQL, HTML, CSS, React, Node.js, API Integration, git"
+        },
+        {
+            "category": "Project Management & Documentation",
+            "items": "JIRA, Canva, MS Office"
+        },
+        {
+            "category": "Client & Business Skills",
+            "items": "Solution storytelling, Stakeholder workshops, Requirements discovery, Presentation and demo delivery, Cross-functional collaboration, Customer empathy"
+        }
+    ],
+    "certifications": [
+        "Oracle Cloud Infrastructure 2025 Certified Java Foundations Associate",
+        "Cisco Networking Academy: Python Essentials and CCNA",
+        "NVIDIA: Fundamentals of Deep Learning",
+        "Cisco Networking Academy: Cybersecurity Essentials",
+        "Scaler: Java Course - Mastering the Fundamentals",
+        "GeeksForGeeks: MongoDB",
+        "NPTEL: Patent Drafting for Beginners"
+    ],
+    "education": [
+        {
+            "institution": "Amity University, Noida",
+            "degree": "Bachelor of Technology in Information Technology",
+            "period": "2022 - Present",
+            "location": "Noida",
+            "score": "CGPA: 7.4/10"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade XII, CBSE",
+            "period": "2021 - 2022",
+            "location": "Noida",
+            "score": "Percentage: 63"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade X, CBSE",
+            "period": "2019 - 2020",
+            "location": "Noida",
+            "score": "Percentage: 69"
+        }
+    ],
+    "additionalStylings": {
+        "projects": "page-break-after: always; border-bottom: none;"
+    }
+}

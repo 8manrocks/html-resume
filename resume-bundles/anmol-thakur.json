@@ -1,0 +1,69 @@
+{
+    "basics": {
+        "name": "Anmol Thakur",
+        "role": "Associate Product Lead",
+        "contact": {
+            "phone": "7999684451",
+            "email": "anmolthakur97@gmail.com",
+            "github": "",
+            "linkedin": "https://linkedin.com/in/anmol-t"
+        }
+    },
+    "summary": "Results-driven Business Analyst with 7+ years of experience bridging the gap between business needs and technological solutions across financial, retail, and enterprise domains. Proven expertise in the full product lifecycle: from requirement gathering (BRD/FRD) and agile project management to UAT execution and post-deployment client feedback tracking. Adept at unifying customer experience and standardizing project-level initiatives to drive interoperability, reduce maintenance costs, and cultivate long-term vendor partnerships.",
+    "experience": [
+        {
+            "company": "Wonderlend Hubs",
+            "role": "Associate Product Lead",
+            "period": "02/2023 - Present",
+            "location": "IDFC First Bank",
+            "highlights": [
+                "Analyze and map all relevant business requirements with proper documentation including all mechanisms for the project to be built.",
+                "Understand the problem statement and come up with an effective solution as per the need.",
+                "Spearheaded UAT efforts, collaborating with cross-functional teams to ensure the successful execution of testing phases, resulting in a 100% improvement in product quality and user satisfaction.",
+                "Creating reports and dashboards using visual tools such as Metabase",
+                "Working with data integrations- API based, file based."
+            ]
+        },
+        {
+            "company": "TATA Consultancy Services",
+            "role": "Business Analyst",
+            "period": "09/2019 - 01/2023",
+            "location": "Best Buy, Athome, Neiman Marcus",
+            "highlights": [
+                "Collaborate with multiple stakeholder groups to resolve production issues.",
+                "Lead and participate in agile meetings- sprint planning, daily standups, and backlog prioritization.",
+                "Monitor business-critical applications and share weekly reports.",
+                "Unify customer experience to drive better business decisions with experience management solutions.",
+                "Ensured project-level initiatives were standardized and scalable, resulting in improved interoperability and reduced maintenance costs.",
+                "Maintaining effective communication with external vendors."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Methodologies",
+            "items": "Agile, Scrum, Kanban"
+        },
+        {
+            "category": "Tools",
+            "items": "JIRA, Microsoft Excel, Splunk, Confluence, SNOW, GrayLog, DynamoDB, AWS, Postman"
+        },
+        {
+            "category": "Skills",
+            "items": "SQL, Business Analysis, Data Analysis, BRD, FRD, Configuration Document, Integration Document, UAT, Proposal Evaluation, Project Management, Throughput Analysis, Data Modelling"
+        }
+    ],
+    "certifications": [
+        "Oracle Certified Professional in PL/SQL (2018)",
+        "Microsoft technology Associate in software development fundamentals (2016)",
+        "Linkedin certified- Business Analysis Foundation (2022)"
+    ],
+    "education": [
+        {
+            "institution": "Truba Institute of Engineering & Information Technology",
+            "degree": "Bachelor of Technology in Computer Science and Engineering",
+            "period": "2015 - 2019",
+            "location": "Bhopal"
+        }
+    ]
+}
