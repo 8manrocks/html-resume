@@ -1,0 +1,120 @@
+{
+    "basics": {
+        "name": "Aniket Singh",
+        "role": "Technical Apprentice",
+        "contact": {
+            "phone": "+91 8178207040",
+            "email": "hianiket2003here@gmail.com",
+            "github": "https://github.com/Aniket1973",
+            "linkedin": "https://www.linkedin.com/in/aniket-singh-8a3818270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        }
+    },
+    "summary": "Final-year B.Tech Information Technology student interested in building a career in IT infrastructure, operating systems, networking, and technical support. Eager to learn in a structured engineering environment, support lab and setup activities, and grow through hands-on exposure to Windows, Linux, virtualization, and troubleshooting.",
+    "experience": [
+        {
+            "company": "Airports Authority of India",
+            "role": "IT Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Delhi (On-Site)",
+            "highlights": [
+                "Observed enterprise IT infrastructure operations and supported basic documentation for technical processes.",
+                "Assisted with simple coordination activities, system-related checks, and follow-ups under guidance from senior team members.",
+                "Gained exposure to workplace IT support practices, operating system environments, and network-dependent systems."
+            ]
+        },
+        {
+            "company": "Marksman Technologies Pvt. Ltd.",
+            "role": "AI and Automation Intern",
+            "period": "May 2025 - July 2025",
+            "location": "Online",
+            "highlights": [
+                "Worked on a guided automation project while improving familiarity with software setup, testing, and troubleshooting workflows.",
+                "Coordinated progress updates, documented observations, and incorporated feedback during development and review cycles.",
+                "Strengthened comfort with technical learning, remote collaboration, and structured task completion."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Health Guardian Healthcare Platform",
+            "role": "Full Stack Developer",
+            "tech_stack": "Python | Machine Learning | HTML | CSS",
+            "highlights": [
+                "Built a web-based healthcare platform while gaining practical exposure to application setup, testing, and issue resolution.",
+                "Worked with multiple components and documented setup observations to keep the project easier to run and review."
+            ]
+        },
+        {
+            "name": "Inventory Management System",
+            "role": "Developer",
+            "tech_stack": "PHP | Apache | SQL",
+            "highlights": [
+                "Developed a database-backed system using a local server environment, strengthening understanding of application hosting and configuration basics.",
+                "Handled basic testing, data flow checks, and troubleshooting during development to improve system reliability."
+            ]
+        },
+        {
+            "name": "Digitalization of Cultural Heritage",
+            "role": "AI Developer",
+            "tech_stack": "Deep Learning | ESRGAN",
+            "highlights": [
+                "Worked on an AI-based restoration project that required careful environment setup, model execution, and result validation.",
+                "Maintained project notes and reviewed outputs to support iterative improvement and clearer technical communication."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "Operating Systems",
+            "items": "Windows, Linux, OS installation basics, system configuration basics, maintenance, beginner-level troubleshooting"
+        },
+        {
+            "category": "Networking",
+            "items": "TCP/IP fundamentals, networking basics, connectivity troubleshooting, network configuration awareness"
+        },
+        {
+            "category": "Virtualization",
+            "items": "Virtual machine basics, VMware concepts, test environment setup, beginner-level VM deployment understanding"
+        },
+        {
+            "category": "Tools & Productivity",
+            "items": "MS Office, Windows tools, Linux terminal basics, Git, documentation, task tracking"
+        },
+        {
+            "category": "Professional Skills",
+            "items": "Communication, collaboration, willingness to learn, SOP following, coordination, issue documentation, escalation support"
+        }
+    ],
+    "certifications": [
+        "Oracle Cloud Infrastructure 2025 Certified Java Foundations Associate",
+        "Cisco Networking Academy: Python Essentials",
+        "Cisco Networking Academy: Cybersecurity Essentials",
+        "NVIDIA: Fundamentals of Deep Learning"
+    ],
+    "education": [
+        {
+            "institution": "Amity University, Noida",
+            "degree": "Bachelor of Technology in Information Technology",
+            "period": "2022 - Present",
+            "location": "Noida",
+            "score": "CGPA: 7.4/10"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade XII, CBSE",
+            "period": "2021 - 2022",
+            "location": "Noida",
+            "score": "Percentage: 63"
+        },
+        {
+            "institution": "Rockwood Senior Secondary School, Noida",
+            "degree": "Grade X, CBSE",
+            "period": "2019 - 2020",
+            "location": "Noida",
+            "score": "Percentage: 69"
+        }
+    ],
+    "additionalStylings": {
+        "projects": "page-break-after: always; border-bottom: none;"
+    }
+}
