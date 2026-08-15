@@ -9,12 +9,12 @@
             "linkedin": ""
         }
     },
-    "summary": "Senior EPC, operations, and techno-commercial sales leader with 27+ years of experience across infrastructure, utilities, water, wastewater, and industrial projects. Most recently served as Assistant Vice President - Sales at Hydroflux Pvt. Ltd., leading client relationships, business development, proposal and BOQ finalization, negotiation support, and WTP/STP/ETP/ZLD solution selling backed by end-to-end EPC delivery expertise.",
+    "summary": "Senior EPC, operations, and techno-commercial sales leader with 27+ years of experience across infrastructure, utilities, water, wastewater, and industrial projects. Currently serving as Assistant Vice President - Sales & Marketing at Hydroflux Engineering Pvt. Ltd., leading client relationships, business development, proposal and BOQ finalization, negotiation support, and WTP/STP/ETP/ZLD solution selling backed by end-to-end EPC delivery expertise.",
     "experience": [
         {
-            "company": "Hydroflux Pvt. Ltd.",
-            "role": "Assistant Vice President - Sales",
-            "period": "Feb 2024 - Aug 2026",
+            "company": "Hydroflux Engineering Pvt. Ltd.",
+            "role": "Assistant Vice President - Sales & Marketing",
+            "period": "Feb 2024 - Present",
             "location": "Delhi",
             "highlights": [
                 "Led techno-commercial sales for WTP, STP, ETP, and ZLD solutions, translating client requirements into technically aligned, commercially viable offerings.",
@@ -25,7 +25,7 @@
         },
         {
             "company": "Earth Water Ltd.",
-            "role": "Operations Head",
+            "role": "Vice President - Projects Operation",
             "period": "May 2008 - Jan 2024",
             "location": "India",
             "highlights": [
@@ -173,12 +173,12 @@
     ],
     "skills": [
         {
-            "category": "Sales and Techno-Commercial",
-            "items": "Client Relationship Management, Business Development Support, Techno-Commercial Sales, Proposal Review, BOQ and Scope Finalization, Site Surveys, Client Meetings, Offer Negotiation Support, Order Finalization, WTP/STP/ETP/ZLD Solution Selling"
-        },
-        {
             "category": "EPC and Project Delivery",
             "items": "Turnkey EPC Project Management, Project Scheduling, Site Execution, Concept to Commissioning, Handover, Multi-Site Operations"
+        },
+        {
+            "category": "Sales and Techno-Commercial",
+            "items": "Client Relationship Management, Business Development Support, Techno-Commercial Sales, Proposal Review, BOQ and Scope Finalization, Site Surveys, Client Meetings, Offer Negotiation Support, Order Finalization, WTP/STP/ETP/ZLD Solution Selling"
         },
         {
             "category": "Water and Infrastructure",
