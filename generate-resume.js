@@ -1,48 +1,38 @@
 const fs = require('fs');
 const path = require('path');
+const { getBundleName, selectFiles } = require('./bundle-target');
 
 const bundlesDir = path.join(__dirname, 'resume-bundles');
 const outputDir = path.join(__dirname, 'generated-templates');
 
-// Ensure output directory exists
-if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-}
+async function generateBundle(file) {
+    const bundlePath = path.join(bundlesDir, file);
+    const data = await fs.promises.readFile(bundlePath, 'utf8');
 
-fs.readdir(bundlesDir, (err, files) => {
-    if (err) {
-        console.error('Error reading bundles directory:', err);
-        return;
+    let resume;
+    try {
+        resume = JSON.parse(data);
+    } catch (error) {
+        throw new Error(`Error parsing JSON in ${file}: ${error.message}`);
     }
 
-    files.forEach(file => {
-        if (path.extname(file) === '.json') {
-            const bundlePath = path.join(bundlesDir, file);
-            fs.readFile(bundlePath, 'utf8', (err, data) => {
-                if (err) {
-                    console.error(`Error reading file ${file}:`, err);
-                    return;
-                }
+    const outputName = path.basename(file, '.json') + '.html';
+    const outputPath = path.join(outputDir, outputName);
+    await fs.promises.writeFile(outputPath, generateHTML(resume));
+    console.log(`Generated ${outputName}`);
+}
 
-                try {
-                    const resume = JSON.parse(data);
-                    const html = generateHTML(resume);
-                    const outputName = path.basename(file, '.json') + '.html';
-                    const outputPath = path.join(outputDir, outputName);
+async function main() {
+    const bundleName = getBundleName(process.argv.slice(2));
+    fs.mkdirSync(outputDir, { recursive: true });
 
-                    fs.writeFile(outputPath, html, (err) => {
-                        if (err) {
-                            console.error(`Error writing file ${outputName}:`, err);
-                        } else {
-                            console.log(`Generated ${outputName}`);
-                        }
-                    });
-                } catch (parseErr) {
-                    console.error(`Error parsing JSON in ${file}:`, parseErr);
-                }
-            });
-        }
-    });
+    const files = selectFiles(bundlesDir, '.json', bundleName);
+    await Promise.all(files.map(generateBundle));
+}
+
+main().catch(error => {
+    console.error('Error generating HTML:', error.message);
+    process.exit(1);
 });
 
 function generateHTML(resume) {
@@ -68,10 +58,10 @@ function generateHTML(resume) {
             <p class="last">${processText(resume.basics.name.split(' ').slice(1).join(' '))}</p>
         </h1>
         <p class="contact-me">
-            ${processText(resume.basics.contact.phone)} |
-            <a href="mailto:${resume.basics.contact.email}">${processText(resume.basics.contact.email)}</a> |
-            <a href="${resume.basics.contact.github}">github</a> |
-            <a href="${resume.basics.contact.linkedin}">linkedin</a>
+            ${resume.basics.contact.location ? `${processText(resume.basics.contact.location)} | ` : ''}${processText(resume.basics.contact.phone)} |
+            <a href="mailto:${resume.basics.contact.email}">${processText(resume.basics.contact.email)}</a>${resume.basics.contact.github ? ` |
+            <a href="${resume.basics.contact.github}">github</a>` : ''}${resume.basics.contact.linkedin ? ` |
+            <a href="${resume.basics.contact.linkedin}">linkedin</a>` : ''}
         </p>
     </header>
 

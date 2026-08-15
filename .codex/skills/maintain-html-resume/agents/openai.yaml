@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain HTML Resume"
+  short_description: "Maintain this JSON-to-HTML/PDF resume project"
+  default_prompt: "Use $maintain-html-resume to update a resume bundle and regenerate its tracked outputs."

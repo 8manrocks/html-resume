@@ -10,15 +10,18 @@
     },
     "experience": [
         {
-            "company": "Siemens",
+            "company": "Infobeans Technologies",
             "role": "Software Engineer",
             "period": "Mar 2024 – Present",
             "location": "Bangalore",
             "highlights": [
-                "Built an [b]agentic AI framework[/b] with a reasoning loop and [b]Model Context Protocol (MCP)[/b] integration.",
-                "Implemented multi-tenant [b]SSO[/b] with [b]dynamic client registration[/b], auth-server discovery via [b]PRM[/b], and full [b]PKCE[/b] / token-lifecycle management as per [b]MCP[/b].",
-                "Developed a [b]WebSocket[/b]-based chat interface backed by [b]Redis pub/sub[/b] for message channels and asynchronous backups to [b]S3[/b].",
-                "Created [b]Kibana[/b] dashboards for metrics including tokens consumed, average response time, and agent latency."
+                "Delivered [b]generative AI solutions[/b] from customer discovery and rapid prototypes through production rollout and feedback-led iteration.",
+                "Built stateful agents with [b]LangChain and Google ADK[/b], covering tool routing, durable memory, model fallbacks, human approvals, and long-running workflows.",
+                "Built [b]RAG and embedding pipelines[/b] with semantic chunking, metadata enrichment, hybrid retrieval, filtering, and reranking in [b]pgvector[/b].",
+                "Built secure [b]MCP clients and servers[/b] for tools, resources, and prompts over Streamable HTTP using OAuth 2.1, protected-resource discovery, DCR, and PKCE.",
+                "Implemented [b]A2A[/b] Agent Cards and task workflows for agent discovery, delegation, multi-turn context, streamed status and artifacts, and cancellation.",
+                "Built [b]AG-UI[/b] event streams for messages, tool calls, synchronized state, approvals, interrupts, and resumable sessions in user-facing applications.",
+                "Used [b]Pydantic Evals[/b] for regression testing and [b]Langfuse[/b] for production tracing across quality, latency, tokens, cost, and failures."
             ]
         },
         {
@@ -54,6 +57,10 @@
         }
     ],
     "skills": [
+        {
+            "category": "Generative AI & Agent Systems",
+            "items": "LangChain, Google ADK, RAG, Embedding Pipelines, pgvector, MCP, A2A, AG-UI, Pydantic Evals, Langfuse"
+        },
         {
             "category": "Languages",
             "items": "Java, C++, TypeScript, JavaScript, SQL, HTML, CSS"

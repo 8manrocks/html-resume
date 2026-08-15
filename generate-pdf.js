@@ -1,6 +1,8 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
 const path = require("path");
+const { pathToFileURL } = require("url");
+const { getBundleName, selectFiles } = require('./bundle-target');
 
 const templatesDir = path.join(__dirname, 'generated-templates');
 const outputDir = path.join(__dirname, 'generated-pdfs');
@@ -12,26 +14,24 @@ const margins = {
   left: '15mm'
 };
 
-// Ensure output directory exists
-if (!fs.existsSync(outputDir)) {
+async function main() {
+  const bundleName = getBundleName(process.argv.slice(2));
   fs.mkdirSync(outputDir, { recursive: true });
-}
 
-(async () => {
+  const files = selectFiles(templatesDir, '.html', bundleName);
+  const browser = await puppeteer.launch();
+
   try {
-    const browser = await puppeteer.launch();
-    const files = fs.readdirSync(templatesDir);
-
     for (const file of files) {
-      if (path.extname(file) === '.html') {
-        const page = await browser.newPage();
-        const templatePath = path.join(templatesDir, file);
-        const pdfName = path.basename(file, '.html') + '.pdf';
-        const pdfPath = path.join(outputDir, pdfName);
+      const page = await browser.newPage();
+      const templatePath = path.join(templatesDir, file);
+      const pdfName = path.basename(file, '.html') + '.pdf';
+      const pdfPath = path.join(outputDir, pdfName);
 
+      try {
         console.log(`Generating PDF for ${file}...`);
 
-        await page.goto(`file:${templatePath}`, {
+        await page.goto(pathToFileURL(templatePath).href, {
           waitUntil: "networkidle0",
         });
 
@@ -43,14 +43,20 @@ if (!fs.existsSync(outputDir)) {
         });
 
         console.log(`Generated ${pdfName}`);
+      } finally {
         await page.close();
       }
     }
-
+  } finally {
     await browser.close();
-    console.log("All PDFs generated successfully.");
-  } catch (err) {
-    console.error("Error generating PDFs:", err);
-    process.exit(1);
   }
-})();
+
+  console.log(bundleName
+    ? `PDF generated successfully for ${bundleName}.`
+    : "All PDFs generated successfully.");
+}
+
+main().catch(error => {
+  console.error("Error generating PDFs:", error.message);
+  process.exit(1);
+});

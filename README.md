@@ -48,13 +48,24 @@ This command runs:
 1.  `npm run generate-html`: Converts JSON bundles to HTML in `generated-templates/`.
 2.  `npm run generate-pdf`: Converts those HTML files to PDFs in `generated-pdfs/`.
 
+To generate only one bundle, pass its basename (the `.json` extension is optional):
+
+```bash
+npm run build -- abhishek-fullstack
+# or: npm run build -- abhishek-fullstack.json
+```
+
 ### Individual Commands
 
 - **Generate only HTML**:
   ```bash
   npm run generate-html
+  npm run generate-html -- abhishek-fullstack
   ```
 - **Generate only PDF**:
   ```bash
   npm run generate-pdf
+  npm run generate-pdf -- abhishek-fullstack
   ```
+
+Omit the bundle argument to regenerate every resume as before.
